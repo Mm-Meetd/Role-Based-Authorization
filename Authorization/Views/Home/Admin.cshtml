@@ -1,0 +1,19 @@
+﻿@model Role
+@{
+    ViewData["Title"] = "Admin";
+}
+
+<h1>Admin</h1>
+<div class="row">
+    <div class="col-md-12">
+        <form method="post" action="@Url.Action("Admin","Home")">
+            <div class="form-group">
+                <label>Role Name</label>
+                <input type="text" class="form-control" style="width:30%;" asp-for="RoleName" placeholder="Role name" required>
+            </div>
+            <br />
+            <button class="btn btn-success" type="submit">Add</button>
+        </form>
+    </div>
+</div>
+
